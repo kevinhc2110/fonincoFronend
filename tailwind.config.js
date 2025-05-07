@@ -6,7 +6,7 @@ export default {
       colors: {
         primary: "#2D308D", // Azul profundo
         secondary: "#D98B38", // Naranja
-        tertiary: "#D1E7DD", // Verde suave
+        tertiary: "#9CCA46", // Verde vibrante
         background: "#FFFFFF", // Blanco
         text: "#1a1a1a", // Gris oscuro
         textMuted: "#4F4F4F", // Gris claro
@@ -14,7 +14,7 @@ export default {
         info: {
           blue: "#6699CC", // Azul claro
           orange: "#E6B465", // Dorado claro
-          green: "#9CCA46", // Verde vibrante
+          green: "#D1E7DD", // Verde claro
         },
       },
       fontFamily: {

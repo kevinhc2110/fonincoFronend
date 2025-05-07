@@ -3,40 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/src/style.css" />
+    <link
+      rel="icon"
+      href="https://www.google.com/favicon.ico"
+      type="image/x-icon"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title class="font-heading">Foninco</title>
   </head>
   <body>
-    <div id="app"></div>
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-      <div
-        class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
-      >
-        <a
-          href="https://flowbite.com"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-8"
-            alt="Flowbite Logo"
-          />
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Flowbite</span
+    <nav class="border-b border-gray-200">
+      <div class="flex flex-col w-full lg:flex-row">
+        <!-- Primera mitad con color secundario -->
+        <div class="lg:w-1/2 w-full bg-primary py-2 px-4">
+          <div
+            class="flex flex-col lg:flex-wrap lg:justify-evenly items-center mx-auto max-w-screen-xl text-sm font-sans space-y-4 lg:space-y-0"
           >
-        </a>
-        <div class="flex items-center space-x-6 rtl:space-x-reverse">
-          <a
-            href="tel:5541251234"
-            class="text-sm text-gray-500 dark:text-white hover:underline"
-            >(555) 412-1234</a
+            <!-- Información de contacto y redes sociales -->
+            <div
+              class="flex flex-col lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 rtl:space-x-reverse w-full"
+            >
+              <!-- Iconos de redes sociales -->
+              <div
+                class="flex space-x-4 items-center rtl:space-x-reverse justify-center w-full"
+              >
+                <a
+                  href="#"
+                  aria-label="Facebook"
+                  class="hover:text-gray-300 text-white transition-colors duration-200"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  class="hover:text-gray-300 text-white transition-colors duration-200"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="#"
+                  aria-label="WhatsApp"
+                  class="hover:text-gray-300 text-white transition-colors duration-200"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a
+                  href="#"
+                  aria-label="TikTok"
+                  class="hover:text-gray-300 text-white transition-colors duration-200"
+                >
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a
+                  href="#"
+                  aria-label="YouTube"
+                  class="hover:text-gray-300 text-white transition-colors duration-200"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+
+              <!-- Correo -->
+              <div
+                class="flex items-center text-white justify-center space-x-2 w-full"
+              >
+                <i class="fa-solid fa-envelope text-tertiary"></i>
+                <a
+                  href="mailto:foninco@vo5.co"
+                  class="transition-all duration-200"
+                  >foninco@vo5.co</a
+                >
+              </div>
+
+              <!-- Teléfono -->
+              <div
+                class="flex items-center text-white justify-center space-x-2 w-full"
+              >
+                <i class="fa-solid fa-phone text-tertiary"></i>
+                <a href="tel:5541251234" class="transition-all duration-200"
+                  >(555) 412-1234</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segunda mitad con color primario -->
+        <div class="lg:w-1/2 hidden bg-tertiary py-2 px-4">
+          <div
+            class="flex items-center justify-center space-x-12 rtl:space-x-reverse text-white text-sm font-sans font-semibold"
           >
-          <a
-            href="#"
-            class="text-sm text-blue-600 dark:text-blue-500 hover:underline"
-            >Login</a
-          >
+            <a
+              href="#"
+              class="hover:text-gray-300 transition-colors duration-200 border-b-2 border-transparent hover:border-white"
+              >Inicio</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-300 transition-colors duration-200 border-b-2 border-transparent hover:border-white"
+              >Servicios</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-300 transition-colors duration-200 border-b-2 border-transparent hover:border-white"
+              >Nosotros</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-300 transition-colors duration-200 border-b-2 border-transparent hover:border-white"
+              >Contacto</a
+            >
+          </div>
         </div>
       </div>
     </nav>
