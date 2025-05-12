@@ -1,123 +1,343 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="/src/style.css" />
-  <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title class="font-heading">Foninco</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      rel="icon"
+      href="https://www.google.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="font-heading">Foninco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <header>
+    <nav class="border-b border-gray-200">
+      <div class="flex flex-col w-full lg:flex-row">
+        <!-- Primera mitad con color secundario -->
+        <div class="lg:w-1/2 w-full bg-primary py-2 px-4">
+          <div
+            class="flex flex-col lg:flex-row lg:flex-wrap lg:justify-evenly items-center mx-auto max-w-screen-xl text-sm font-sans space-y-4 lg:space-y-0"
+          >
+            <!-- Información de contacto y redes sociales -->
+            <div
+              class="flex flex-col lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 rtl:space-x-reverse w-full"
+            >
+              <!-- Iconos de redes sociales -->
+              <div
+                class="flex space-x-4 items-center rtl:space-x-reverse justify-center w-full"
+              >
+                <a
+                  href="#"
+                  aria-label="Facebook"
+                  class="hover:text-gray-300 text-white transition-colors duration-200"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  class="hover:text-gray-300 text-white transition-colors duration-200"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="#"
+                  aria-label="WhatsApp"
+                  class="hover:text-gray-300 text-white transition-colors duration-200"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a
+                  href="#"
+                  aria-label="TikTok"
+                  class="hover:text-gray-300 text-white transition-colors duration-200"
+                >
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a
+                  href="#"
+                  aria-label="YouTube"
+                  class="hover:text-gray-300 text-white transition-colors duration-200"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
 
-</head>
-<body class="bg-background text-text font-sans">
-  <!-- Top bar with social and contact -->
-<body class="bg-background text-text font-sans">
-<header class="flex flex-col md:flex-row">
-  <!-- Contact (left) -->
-  <div class="w-full md:w-1/2 bg-primary text-background flex items-center flex-wrap px-4 py-2">
-    <a href="mailto:info@foninco.com" class="flex items-center mr-4 hover:text-secondary">
-      <i class="fas fa-envelope text-tertiary mr-1"></i>info@foninco.com
-    </a>
-    <a href="tel:+573015287941" class="flex items-center mr-4 hover:text-secondary">
-      <i class="fas fa-phone-alt text-tertiary mr-1"></i>+57 301 528 7941
-    </a>
-    <a href="tel:+573127890456" class="flex items-center mr-4 hover:text-secondary">
-      <i class="fas fa-phone-alt text-tertiary mr-1"></i>+57 312 789 0456
-    </a>
-    <a href="tel:+573204569873" class="flex items-center hover:text-secondary">
-      <i class="fas fa-phone-alt text-tertiary mr-1"></i>+57 320 456 9873
-    </a>
-  </div>
-  <!-- Quick Links (right) -->
-  <div class="w-full md:w-1/2 bg-secondary text-background flex justify-center md:justify-end items-center px-4 py-2">
-    <nav class="space-x-6 font-heading font-semibold text-sm">
-      <a href="#" class="hover:underline">¿Cómo asociarme?</a>
-      <a href="#" class="hover:underline">Ahorros</a>
-      <a href="#" class="hover:underline">Créditos</a>
-      <a href="#" class="hover:underline">Convenios</a>
+              <!-- Correo -->
+              <div
+                class="flex items-center text-white justify-center space-x-2 w-full"
+              >
+                <i class="fa-solid fa-envelope text-tertiary"></i>
+                <a
+                  href="mailto:foninco@vo5.co"
+                  class="transition-all duration-200"
+                  >foninco@vo5.co</a
+                >
+              </div>
+
+              <!-- Teléfono -->
+              <div
+                class="flex items-center text-white justify-center space-x-2 w-full"
+              >
+                <i class="fa-solid fa-phone text-tertiary"></i>
+                <a href="tel:5541251234" class="transition-all duration-200"
+                  >(555) 412-1234</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segunda mitad con color primario -->
+        <div class="hidden lg:block lg:w-1/2 bg-tertiary py-2 px-4">
+          <div
+            class="flex items-center justify-center space-x-12 rtl:space-x-reverse text-white text-sm font-sans font-semibold"
+          >
+            <a
+              href="#"
+              class="hover:text-gray-300 transition-colors duration-200 border-b-2 border-transparent hover:border-white"
+              >Inicio</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-300 transition-colors duration-200 border-b-2 border-transparent hover:border-white"
+              >Servicios</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-300 transition-colors duration-200 border-b-2 border-transparent hover:border-white"
+              >Nosotros</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-300 transition-colors duration-200 border-b-2 border-transparent hover:border-white"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </div>
     </nav>
-  </div>
-</header>
+    <nav
+      class="flex items-center justify-between px-4 py-4 border-b border-gray-200"
+    >
+      <a class="flex items-center" href="https://foninco.com">
+        <img
+          alt="Logo Foninco"
+          class="h-14 rounded-r-full"
+          src="..."
+          width="150"
+          height="60"
+        />
+      </a>
+      <ul
+        class="hidden md:flex space-x-8 text-textMuted font-medium text-sm font-heading"
+      >
+        <li>
+          <a class="text-secondary border-b-2 border-secondary pb-1" href="#"
+            >Inicio</a
+          >
+        </li>
+        <li class="relative group">
+          <button
+            class="flex items-center space-x-1 hover:text-secondary focus:outline-none"
+          >
+            <span>Quienes somos</span
+            ><i class="fas fa-chevron-down text-xs"></i>
+          </button>
+          <ul
+            class="absolute left-0 top-full mt-1 bg-background shadow-lg rounded hidden group-hover:block min-w-[180px] z-10"
+          >
+            <li>
+              <a class="block px-4 py-2 hover:bg-secondary/10" href="#"
+                >Misión</a
+              >
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-secondary/10" href="#"
+                >Visión</a
+              >
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-secondary/10" href="#"
+                >Valores</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button
+            class="flex items-center space-x-1 hover:text-secondary focus:outline-none"
+          >
+            <span>Portafolio de Servicios</span
+            ><i class="fas fa-chevron-down text-xs"></i>
+          </button>
+          <ul
+            class="absolute left-0 top-full mt-1 bg-background shadow-lg rounded hidden group-hover:block min-w-[180px] z-10"
+          >
+            <li>
+              <a class="block px-4 py-2 hover:bg-secondary/10" href="#"
+                >Ahorros</a
+              >
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-secondary/10" href="#"
+                >Créditos</a
+              >
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-secondary/10" href="#"
+                >Otros Servicios</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button
+            class="flex items-center space-x-1 hover:text-secondary focus:outline-none"
+          >
+            <span>Asociados</span><i class="fas fa-chevron-down text-xs"></i>
+          </button>
+          <ul
+            class="absolute left-0 top-full mt-1 bg-background shadow-lg rounded hidden group-hover:block min-w-[180px] z-10"
+          >
+            <li>
+              <a class="block px-4 py-2 hover:bg-secondary/10" href="#"
+                >Asociados Activos</a
+              >
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-secondary/10" href="#"
+                >Beneficios</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a class="hover:text-secondary" href="#">Comités</a></li>
+        <li><a class="hover:text-secondary" href="#">PQRS</a></li>
+      </ul>
+      <button
+        aria-label="Abrir menú"
+        class="md:hidden text-secondary focus:outline-none"
+        id="menu-btn"
+      >
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+      <a class="hidden md:block" href="#"
+        ><img alt="CEUS logo" class="h-10" src="..." width="120" height="40"
+      /></a>
+    </nav>
+    <body>
+      <div id="slider" class="relative w-full" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://via.placeholder.com/800x400?text=Slide+1"
+              class="absolute block w-full h-full object-cover"
+              alt="Slide 1"
+            />
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://via.placeholder.com/800x400?text=Slide+2"
+              class="absolute block w-full h-full object-cover"
+              alt="Slide 2"
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="https://via.placeholder.com/800x400?text=Slide+3"
+              class="absolute block w-full h-full object-cover"
+              alt="Slide 3"
+            />
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
 
-  <!-- Main navigation bar -->
-  <nav class="flex items-center justify-between px-4 py-4 border-b border-gray-200">
-    <a class="flex items-center" href="https://foninco.com">
-      <img alt="Logo Foninco" class="h-14 rounded-r-full" src="..." width="150" height="60" />
-    </a>
-    <ul class="hidden md:flex space-x-8 text-textMuted font-medium text-sm font-heading">
-      <li><a class="text-secondary border-b-2 border-secondary pb-1" href="#">Inicio</a></li>
-      <li class="relative group">
-        <button class="flex items-center space-x-1 hover:text-secondary focus:outline-none"><span>Quienes somos</span><i class="fas fa-chevron-down text-xs"></i></button>
-        <ul class="absolute left-0 top-full mt-1 bg-background shadow-lg rounded hidden group-hover:block min-w-[180px] z-10">
-          <li><a class="block px-4 py-2 hover:bg-secondary/10" href="#">Misión</a></li>
-          <li><a class="block px-4 py-2 hover:bg-secondary/10" href="#">Visión</a></li>
-          <li><a class="block px-4 py-2 hover:bg-secondary/10" href="#">Valores</a></li>
-        </ul>
-      </li>
-      <li class="relative group">
-        <button class="flex items-center space-x-1 hover:text-secondary focus:outline-none"><span>Portafolio de Servicios</span><i class="fas fa-chevron-down text-xs"></i></button>
-        <ul class="absolute left-0 top-full mt-1 bg-background shadow-lg rounded hidden group-hover:block min-w-[180px] z-10">
-          <li><a class="block px-4 py-2 hover:bg-secondary/10" href="#">Ahorros</a></li>
-          <li><a class="block px-4 py-2 hover:bg-secondary/10" href="#">Créditos</a></li>
-          <li><a class="block px-4 py-2 hover:bg-secondary/10" href="#">Otros Servicios</a></li>
-        </ul>
-      </li>
-      <li class="relative group">
-        <button class="flex items-center space-x-1 hover:text-secondary focus:outline-none"><span>Asociados</span><i class="fas fa-chevron-down text-xs"></i></button>
-        <ul class="absolute left-0 top-full mt-1 bg-background shadow-lg rounded hidden group-hover:block min-w-[180px] z-10">
-          <li><a class="block px-4 py-2 hover:bg-secondary/10" href="#">Asociados Activos</a></li>
-          <li><a class="block px-4 py-2 hover:bg-secondary/10" href="#">Beneficios</a></li>
-        </ul>
-      </li>
-      <li><a class="hover:text-secondary" href="#">Comités</a></li>
-      <li><a class="hover:text-secondary" href="#">PQRS</a></li>
-    </ul>
-    <button aria-label="Abrir menú" class="md:hidden text-secondary focus:outline-none" id="menu-btn"><i class="fas fa-bars text-xl"></i></button>
-    <a class="hidden md:block" href="#"><img alt="CEUS logo" class="h-10" src="..." width="120" height="40" /></a>
-  </nav>
-
-  <div id="slider" class="relative w-full" data-carousel="static">
-  <!-- Carousel wrapper -->
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-    <!-- Item 1 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img src="https://via.placeholder.com/800x400?text=Slide+1" class="absolute block w-full h-full object-cover" alt="Slide 1">
-    </div>
-    <!-- Item 2 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img src="https://via.placeholder.com/800x400?text=Slide+2" class="absolute block w-full h-full object-cover" alt="Slide 2">
-    </div>
-    <!-- Item 3 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img src="https://via.placeholder.com/800x400?text=Slide+3" class="absolute block w-full h-full object-cover" alt="Slide 3">
-    </div>
-  </div>
-  <!-- Slider indicators -->
-  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-  </div>
-  <!-- Slider controls -->
-  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50">
-      <svg aria-hidden="true" class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-      </svg>
-      <span class="sr-only">Previous</span>
-    </span>
-  </button>
-  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50">
-      <svg aria-hidden="true" class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-      </svg>
-      <span class="sr-only">Next</span>
-    </span>
-  </button>
-</div>
-  </div>
-  <script type="module" src="/src/main.js"></script>
-  <script src="https://unpkg.com/flowbite/dist/flowbite.js"></script>
-</body>
+      <script type="module" src="/src/main.js"></script>
+      <script src="https://unpkg.com/flowbite/dist/flowbite.js"></script>
+    </body>
+  </header>
 </html>
