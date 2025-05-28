@@ -1,7 +1,3 @@
 import "./style.css";
-
-document.querySelector("#app").innerHTML = `
-
-`;
-
-setupCounter(document.querySelector("#counter"));
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "flowbite";
