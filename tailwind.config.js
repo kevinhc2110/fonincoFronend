@@ -16,7 +16,7 @@ export default {
           400: "#696de3",
           500: "#4f53cc",
           600: "#3f43aa",
-          700: "#2d308d", // Tu color base
+          700: "#2d308d", // Color base
           800: "#23276b",
           900: "#191c4d",
         }, // Azul
@@ -27,7 +27,7 @@ export default {
           300: "#fbb974",
           400: "#f9a348",
           500: "#f38a25",
-          600: "#d98b38", // Tu color base
+          600: "#d98b38", // Color base
           700: "#b66c20",
           800: "#925318",
           900: "#713f13",
