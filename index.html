@@ -327,7 +327,7 @@
         >
           <!-- Card 1 -->
           <div
-            class="max-w-sm border rounded-lg shadow-sm bg-info-blue border-primary-600"
+            class="max-w-sm h-full flex flex-col border rounded-lg shadow-sm bg-info-blue border-primary-600"
           >
             <a href="#">
               <img
@@ -336,20 +336,26 @@
                 alt=""
               />
             </a>
-            <div class="p-5">
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
-                >
-                  Creditos
-                </h5>
-              </a>
-              <p class="mb-3 font-normal font-sans text-white">
-                Tu fondo, tu respaldo financiero.
-              </p>
+
+            <!-- Contenido que empuja el botón abajo -->
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex-grow">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
+                  >
+                    Creditos
+                  </h5>
+                </a>
+                <p class="font-normal font-sans text-white">
+                  Tu fondo, tu respaldo financiero.
+                </p>
+              </div>
+
+              <!-- Botón abajo -->
               <a
                 href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
+                class="mt-4 inline-flex self-start items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
               >
                 Mas info
                 <svg
@@ -372,9 +378,8 @@
           </div>
 
           <!-- Card 2 -->
-
           <div
-            class="max-w-sm border rounded-lg shadow-sm bg-info-blue border-primary-600"
+            class="max-w-sm h-full flex flex-col border rounded-lg shadow-sm bg-info-blue border-primary-600"
           >
             <a href="#">
               <img
@@ -383,20 +388,70 @@
                 alt=""
               />
             </a>
-            <div class="p-5">
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
-                >
-                  Ahorro
-                </h5>
-              </a>
-              <p class="mb-3 font-normal font-sans text-white">
-                Ahorra fácil, vive tranquilo
-              </p>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex-grow">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
+                  >
+                    Ahorro
+                  </h5>
+                </a>
+                <p class="font-normal font-sans text-white">
+                  Ahorra fácil, vive tranquilo
+                </p>
+              </div>
               <a
                 href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
+                class="mt-4 inline-flex self-start items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
+              >
+                Mas info
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="max-w-sm h-full flex flex-col border rounded-lg shadow-sm bg-info-blue border-primary-600"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="./src/assets/Contenido/auxilios_img.jpg"
+                alt=""
+              />
+            </a>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex-grow">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
+                  >
+                    Auxilios
+                  </h5>
+                </a>
+                <p class="font-normal font-sans text-white">
+                  Tu respaldo en momentos difíciles.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="mt-4 inline-flex self-start items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
               >
                 Mas info
                 <svg
@@ -419,9 +474,8 @@
           </div>
 
           <!-- Card 4 -->
-
           <div
-            class="max-w-sm border rounded-lg shadow-sm bg-info-blue border-primary-600"
+            class="max-w-sm h-full flex flex-col border rounded-lg shadow-sm bg-info-blue border-primary-600"
           >
             <a href="#">
               <img
@@ -430,66 +484,22 @@
                 alt=""
               />
             </a>
-            <div class="p-5">
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
-                >
-                  Beneficios
-                </h5>
-              </a>
-              <p class="mb-3 font-normal font-sans text-white">
-                Disfruta lo que es ser parte.
-              </p>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex-grow">
+                <a href="#">
+                  <h5
+                    class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
+                  >
+                    Beneficios
+                  </h5>
+                </a>
+                <p class="font-normal font-sans text-white">
+                  Disfruta lo que es ser parte.
+                </p>
+              </div>
               <a
                 href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
-              >
-                Mas info
-                <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <!-- Card 3 -->
-
-          <div
-            class="max-w-sm border rounded-lg shadow-sm bg-info-blue border-primary-600"
-          >
-            <a href="#">
-              <img
-                class="rounded-t-lg"
-                src="./src/assets/Contenido/auxilios_img.jpg"
-                alt=""
-              />
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
-                >
-                  Auxilios
-                </h5>
-              </a>
-              <p class="mb-3 font-normal font-sans text-white">
-                Tu respaldo en momentos difíciles.
-              </p>
-              <a
-                href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
+                class="mt-4 inline-flex self-start items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
               >
                 Mas info
                 <svg
