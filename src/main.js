@@ -3,6 +3,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "flowbite";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "swiper/css";
+import "swiper/css/autoplay";
+import Swiper from "swiper";
+import { Autoplay } from "swiper/modules";
 
 AOS.init();
 
@@ -24,33 +28,18 @@ const images = [
   "images/zenu.jpg",
 ];
 
-const logos = document.querySelectorAll(".logo");
-let currentIndexes = [0, 1, 2, 3, 4, 5]; // índices iniciales para las 6 imágenes
-let nextReplace = 0; // cuál imagen cambiar en cada paso
-
-function updateLogo() {
-  const img = logos[nextReplace];
-
-  // Animación de salida
-  img.classList.add("-translate-y-full", "opacity-0");
-
-  setTimeout(() => {
-    // Calcular el próximo índice de imagen global
-    currentIndexes[nextReplace] =
-      (currentIndexes[nextReplace] + 6) % images.length;
-    img.src = images[currentIndexes[nextReplace]];
-
-    // Reiniciar posición y mostrar
-    img.classList.remove("-translate-y-full");
-    img.classList.add("translate-y-full");
-
-    setTimeout(() => {
-      img.classList.remove("translate-y-full", "opacity-0");
-    }, 50);
-  }, 500);
-
-  // Siguiente logo a reemplazar
-  nextReplace = (nextReplace + 1) % 6;
-}
-
-setInterval(updateLogo, 2500); // cada 2.5s cambia uno
+const swiper = new Swiper(".mySwiper", {
+  modules: [Autoplay],
+  loop: true,
+  slidesPerView: 6,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: { slidesPerView: 2 },
+    640: { slidesPerView: 4 },
+    1024: { slidesPerView: 6 },
+  },
+});
