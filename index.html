@@ -5,6 +5,42 @@
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="icon" href="./src/assets/logoFoninco.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Foninco - Fondo de empleados comprometido con el bienestar financiero de nuestros asociados. Ofrecemos servicios de ahorro, crédito y beneficios exclusivos."
+    />
+    <meta
+      name="keywords"
+      content="Foninco, fondo de empleados, ahorros, créditos, beneficios, auxilios, convenios"
+    />
+    <meta name="author" content="Foninco" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://foninco.com/" />
+    <meta
+      property="og:title"
+      content="Foninco - Tu fondo de empleados de confianza"
+    />
+    <meta
+      property="og:description"
+      content="Foninco - Fondo de empleados comprometido con el bienestar financiero de nuestros asociados."
+    />
+    <meta property="og:image" content="./src/assets/logoFoninco.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://foninco.com/" />
+    <meta
+      property="twitter:title"
+      content="Foninco - Tu fondo de empleados de confianza"
+    />
+    <meta
+      property="twitter:description"
+      content="Foninco - Fondo de empleados comprometido con el bienestar financiero de nuestros asociados."
+    />
+    <meta property="twitter:image" content="./src/assets/logoFoninco.png" />
+
     <title>Foninco</title>
   </head>
 
@@ -225,6 +261,141 @@
           ><img alt="CEUS logo" class="h-10" src="..." width="120" height="40"
         /></a>
       </nav>
+
+      <!-- Menú móvil -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white fixed top-0 left-0 w-full h-full z-50"
+      >
+        <div class="p-4 bg-primary-700">
+          <div class="flex justify-between items-center">
+            <a href="#" class="flex items-center">
+              <img
+                src="./src/assets/logoFoninco.png"
+                alt="Logo Foninco"
+                class="h-12 rounded-r-full bg-white p-1"
+              />
+            </a>
+            <button id="close-menu-btn" class="text-white focus:outline-none">
+              <i class="fas fa-times text-2xl"></i>
+            </button>
+          </div>
+        </div>
+        <nav class="p-4">
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="#"
+                class="block text-text hover:text-secondary-600 font-semibold"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <button
+                class="flex items-center justify-between w-full text-text hover:text-secondary-600 font-semibold"
+                onclick="toggleSubmenu('quienes-somos-submenu')"
+              >
+                <span>Quienes somos</span>
+                <i class="fas fa-chevron-down text-xs"></i>
+              </button>
+              <ul id="quienes-somos-submenu" class="hidden pl-4 mt-2 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="block text-textMore hover:text-secondary-600"
+                    >Misión</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-textMore hover:text-secondary-600"
+                    >Visión</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-textMore hover:text-secondary-600"
+                    >Valores</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button
+                class="flex items-center justify-between w-full text-text hover:text-secondary-600 font-semibold"
+                onclick="toggleSubmenu('servicios-submenu')"
+              >
+                <span>Portafolio de Servicios</span>
+                <i class="fas fa-chevron-down text-xs"></i>
+              </button>
+              <ul id="servicios-submenu" class="hidden pl-4 mt-2 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="block text-textMore hover:text-secondary-600"
+                    >Ahorros</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-textMore hover:text-secondary-600"
+                    >Créditos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-textMore hover:text-secondary-600"
+                    >Otros Servicios</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button
+                class="flex items-center justify-between w-full text-text hover:text-secondary-600 font-semibold"
+                onclick="toggleSubmenu('asociados-submenu')"
+              >
+                <span>Asociados</span>
+                <i class="fas fa-chevron-down text-xs"></i>
+              </button>
+              <ul id="asociados-submenu" class="hidden pl-4 mt-2 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="block text-textMore hover:text-secondary-600"
+                    >Asociados Activos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-textMore hover:text-secondary-600"
+                    >Beneficios</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block text-text hover:text-secondary-600 font-semibold"
+                >Comités</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block text-text hover:text-secondary-600 font-semibold"
+                >PQRS</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
@@ -327,39 +498,43 @@
         >
           <!-- Card 1 -->
           <div
-            class="max-w-sm h-full flex flex-col border rounded-lg shadow-sm bg-info-blue border-primary-600"
+            class="max-w-sm h-full flex flex-col border rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-gradient-to-br from-info-blue to-primary-700 border-primary-600 overflow-hidden group"
           >
-            <a href="#">
+            <a href="#" class="relative overflow-hidden">
               <img
-                class="rounded-t-lg"
+                class="rounded-t-xl w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
                 src="./src/assets/Contenido/creditos_img.webp"
-                alt=""
+                alt="Servicios de crédito"
               />
+              <div
+                class="absolute inset-0 bg-black opacity-20 group-hover:opacity-0 transition-opacity duration-300"
+              ></div>
             </a>
 
             <!-- Contenido que empuja el botón abajo -->
-            <div class="p-5 flex flex-col flex-1">
+            <div class="p-6 flex flex-col flex-1">
               <div class="flex-grow">
                 <a href="#">
                   <h5
-                    class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
+                    class="mb-3 text-2xl font-sans font-bold tracking-tight text-white group-hover:text-tertiary-400 transition-colors duration-300"
                   >
-                    Creditos
+                    Créditos
                   </h5>
                 </a>
-                <p class="font-normal font-sans text-white">
-                  Tu fondo, tu respaldo financiero.
+                <p class="font-normal font-sans text-white/90 mb-4">
+                  Tu fondo, tu respaldo financiero. Obtén préstamos a las
+                  mejores tasas del mercado.
                 </p>
               </div>
 
               <!-- Botón abajo -->
               <a
                 href="#"
-                class="mt-4 inline-flex self-start items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
+                class="inline-flex self-start items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg bg-tertiary-400 hover:bg-tertiary-500 focus:ring-4 focus:ring-tertiary-300 transition-all duration-300 group"
               >
-                Mas info
+                Más información
                 <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2 transform group-hover:translate-x-1 transition-transform duration-300"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -379,35 +554,39 @@
 
           <!-- Card 2 -->
           <div
-            class="max-w-sm h-full flex flex-col border rounded-lg shadow-sm bg-info-blue border-primary-600"
+            class="max-w-sm h-full flex flex-col border rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-gradient-to-br from-info-blue to-primary-700 border-primary-600 overflow-hidden group"
           >
-            <a href="#">
+            <a href="#" class="relative overflow-hidden">
               <img
-                class="rounded-t-lg"
+                class="rounded-t-xl w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
                 src="./src/assets/Contenido/ahorro_img.jpg"
-                alt=""
+                alt="Servicios de ahorro"
               />
+              <div
+                class="absolute inset-0 bg-black opacity-20 group-hover:opacity-0 transition-opacity duration-300"
+              ></div>
             </a>
-            <div class="p-5 flex flex-col flex-1">
+            <div class="p-6 flex flex-col flex-1">
               <div class="flex-grow">
                 <a href="#">
                   <h5
-                    class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
+                    class="mb-3 text-2xl font-sans font-bold tracking-tight text-white group-hover:text-tertiary-400 transition-colors duration-300"
                   >
                     Ahorro
                   </h5>
                 </a>
-                <p class="font-normal font-sans text-white">
-                  Ahorra fácil, vive tranquilo
+                <p class="font-normal font-sans text-white/90 mb-4">
+                  Ahorra fácil, vive tranquilo. Planes de ahorro diseñados para
+                  tu futuro.
                 </p>
               </div>
               <a
                 href="#"
-                class="mt-4 inline-flex self-start items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
+                class="inline-flex self-start items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg bg-tertiary-400 hover:bg-tertiary-500 focus:ring-4 focus:ring-tertiary-300 transition-all duration-300 group"
               >
-                Mas info
+                Más información
                 <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2 transform group-hover:translate-x-1 transition-transform duration-300"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -427,35 +606,39 @@
 
           <!-- Card 3 -->
           <div
-            class="max-w-sm h-full flex flex-col border rounded-lg shadow-sm bg-info-blue border-primary-600"
+            class="max-w-sm h-full flex flex-col border rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-gradient-to-br from-info-blue to-primary-700 border-primary-600 overflow-hidden group"
           >
-            <a href="#">
+            <a href="#" class="relative overflow-hidden">
               <img
-                class="rounded-t-lg"
+                class="rounded-t-xl w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
                 src="./src/assets/Contenido/auxilios_img.jpg"
-                alt=""
+                alt="Servicios de auxilios"
               />
+              <div
+                class="absolute inset-0 bg-black opacity-20 group-hover:opacity-0 transition-opacity duration-300"
+              ></div>
             </a>
-            <div class="p-5 flex flex-col flex-1">
+            <div class="p-6 flex flex-col flex-1">
               <div class="flex-grow">
                 <a href="#">
                   <h5
-                    class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
+                    class="mb-3 text-2xl font-sans font-bold tracking-tight text-white group-hover:text-tertiary-400 transition-colors duration-300"
                   >
                     Auxilios
                   </h5>
                 </a>
-                <p class="font-normal font-sans text-white">
-                  Tu respaldo en momentos difíciles.
+                <p class="font-normal font-sans text-white/90 mb-4">
+                  Tu respaldo en momentos difíciles. Auxilios para educación,
+                  calamidad y más.
                 </p>
               </div>
               <a
                 href="#"
-                class="mt-4 inline-flex self-start items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
+                class="inline-flex self-start items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg bg-tertiary-400 hover:bg-tertiary-500 focus:ring-4 focus:ring-tertiary-300 transition-all duration-300 group"
               >
-                Mas info
+                Más información
                 <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2 transform group-hover:translate-x-1 transition-transform duration-300"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -475,35 +658,39 @@
 
           <!-- Card 4 -->
           <div
-            class="max-w-sm h-full flex flex-col border rounded-lg shadow-sm bg-info-blue border-primary-600"
+            class="max-w-sm h-full flex flex-col border rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-gradient-to-br from-info-blue to-primary-700 border-primary-600 overflow-hidden group"
           >
-            <a href="#">
+            <a href="#" class="relative overflow-hidden">
               <img
-                class="rounded-t-lg"
+                class="rounded-t-xl w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
                 src="./src/assets/Contenido/beneficios_img.webp"
-                alt=""
+                alt="Beneficios para asociados"
               />
+              <div
+                class="absolute inset-0 bg-black opacity-20 group-hover:opacity-0 transition-opacity duration-300"
+              ></div>
             </a>
-            <div class="p-5 flex flex-col flex-1">
+            <div class="p-6 flex flex-col flex-1">
               <div class="flex-grow">
                 <a href="#">
                   <h5
-                    class="mb-2 text-2xl font-sans font-semibold tracking-tight text-white"
+                    class="mb-3 text-2xl font-sans font-bold tracking-tight text-white group-hover:text-tertiary-400 transition-colors duration-300"
                   >
                     Beneficios
                   </h5>
                 </a>
-                <p class="font-normal font-sans text-white">
-                  Disfruta lo que es ser parte.
+                <p class="font-normal font-sans text-white/90 mb-4">
+                  Disfruta lo que es ser parte. Descuentos exclusivos y
+                  beneficios especiales.
                 </p>
               </div>
               <a
                 href="#"
-                class="mt-4 inline-flex self-start items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-600 focus:ring-4 focus:ring-primary-400 transition-colors duration-200"
+                class="inline-flex self-start items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg bg-tertiary-400 hover:bg-tertiary-500 focus:ring-4 focus:ring-tertiary-300 transition-all duration-300 group"
               >
-                Mas info
+                Más información
                 <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2 transform group-hover:translate-x-1 transition-transform duration-300"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -658,25 +845,30 @@
 
     <!-- Feature section -->
 
-    <section class="py-6 px-4 lg:py-12">
+    <section
+      class="py-6 px-4 lg:py-12 bg-gradient-to-b from-white to-primary-50"
+    >
       <div class="max-w-6xl mx-auto text-center">
         <h2
           data-aos="fade-up"
           data-aos-duration="1000"
-          class="text-3xl font-bold text-text mb-6"
+          class="text-4xl font-bold text-text mb-6 font-heading"
         >
           Herramientas para nuestros Afiliados
         </h2>
-        <p class="text-textMore mb-6 lg:mg-10">
+        <p class="text-textMore mb-12 max-w-2xl mx-auto">
           Accede a todos los servicios del Fondo de Empleados en un solo lugar.
+          Gestiona tus beneficios de manera fácil y segura.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Simulador de crédito -->
           <div
-            class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:bg-tertiary-50 border border-tertiary-400 p-6 transition"
+            class="bg-white rounded-2xl shadow-md hover:shadow-xl border-2 border-tertiary-400/20 hover:border-tertiary-400 p-6 transition-all duration-300 hover:-translate-y-1"
           >
-            <div class="w-16 h-16 mx-auto mb-4 text-tertiary-400">
+            <div
+              class="w-16 h-16 mx-auto mb-6 text-tertiary-400 transform transition-transform duration-300 hover:scale-110"
+            >
               <svg
                 class="w-full h-full"
                 xmlns="http://www.w3.org/2000/svg"
@@ -691,19 +883,19 @@
               </svg>
             </div>
 
-            <h3 class="text-xl font-bold text-text text-center">
+            <h3 class="text-xl font-bold text-text text-center mb-3">
               Simulador de Crédito
             </h3>
-            <p class="text-textMore text-sm mt-2 text-center">
+            <p class="text-textMore text-sm mt-2 text-center mb-6">
               Calcula fácilmente tu crédito según montos y plazos.
             </p>
             <a
               href="/simulador"
-              class="text-primary-700 font-semibold mt-4 inline-block group"
+              class="text-primary-700 font-semibold mt-4 inline-flex items-center justify-center w-full group hover:text-primary-600 transition-colors duration-300"
             >
               Probar ahora
               <span
-                class="inline-block transition-transform group-hover:translate-x-1"
+                class="inline-block transition-transform group-hover:translate-x-1 ml-2"
                 >→</span
               >
             </a>
@@ -711,9 +903,11 @@
 
           <!-- Descarga de formularios -->
           <div
-            class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:bg-tertiary-50 border border-tertiary-400 p-6 transition"
+            class="bg-white rounded-2xl shadow-md hover:shadow-xl border-2 border-tertiary-400/20 hover:border-tertiary-400 p-6 transition-all duration-300 hover:-translate-y-1"
           >
-            <div class="w-16 h-16 mx-auto mb-4 text-tertiary-400">
+            <div
+              class="w-16 h-16 mx-auto mb-6 text-tertiary-400 transform transition-transform duration-300 hover:scale-110"
+            >
               <svg
                 class="w-full h-full"
                 aria-hidden="true"
@@ -729,17 +923,19 @@
               </svg>
             </div>
 
-            <h3 class="text-xl font-bold text-text text-center">Formularios</h3>
-            <p class="text-textMore text-sm mt-2 text-center">
+            <h3 class="text-xl font-bold text-text text-center mb-3">
+              Formularios
+            </h3>
+            <p class="text-textMore text-sm mt-2 text-center mb-6">
               Descarga formularios para afiliaciones, créditos, retiro, etc.
             </p>
             <a
               href="/formularios"
-              class="text-primary-700 font-semibold mt-4 inline-block group text-center"
+              class="text-primary-700 font-semibold mt-4 inline-flex items-center justify-center w-full group hover:text-primary-600 transition-colors duration-300"
             >
               Ver formularios
               <span
-                class="inline-block transition-transform group-hover:translate-x-1"
+                class="inline-block transition-transform group-hover:translate-x-1 ml-2"
                 >→</span
               >
             </a>
@@ -747,9 +943,11 @@
 
           <!-- Chat de ayuda -->
           <div
-            class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:bg-tertiary-50 border border-tertiary-400 p-6 transition"
+            class="bg-white rounded-2xl shadow-md hover:shadow-xl border-2 border-tertiary-400/20 hover:border-tertiary-400 p-6 transition-all duration-300 hover:-translate-y-1"
           >
-            <div class="w-16 h-16 mx-auto mb-4 text-tertiary-400">
+            <div
+              class="w-16 h-16 mx-auto mb-6 text-tertiary-400 transform transition-transform duration-300 hover:scale-110"
+            >
               <svg
                 class="w-full h-full"
                 xmlns="http://www.w3.org/2000/svg"
@@ -769,19 +967,19 @@
               </svg>
             </div>
 
-            <h3 class="text-xl font-bold text-text text-center">
+            <h3 class="text-xl font-bold text-text text-center mb-3">
               Chat de Ayuda
             </h3>
-            <p class="text-textMore text-sm mt-2 text-center">
+            <p class="text-textMore text-sm mt-2 text-center mb-6">
               Atención en línea para resolver tus dudas en tiempo real.
             </p>
             <a
               href="/ayuda"
-              class="text-primary-700 font-semibold mt-4 inline-block group text-center"
+              class="text-primary-700 font-semibold mt-4 inline-flex items-center justify-center w-full group hover:text-primary-600 transition-colors duration-300"
             >
               Habla con un asesor
               <span
-                class="inline-block transition-transform group-hover:translate-x-1"
+                class="inline-block transition-transform group-hover:translate-x-1 ml-2"
                 >→</span
               >
             </a>
@@ -789,9 +987,11 @@
 
           <!-- Actas -->
           <div
-            class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:bg-tertiary-50 border border-tertiary-400 p-6 transition"
+            class="bg-white rounded-2xl shadow-md hover:shadow-xl border-2 border-tertiary-400/20 hover:border-tertiary-400 p-6 transition-all duration-300 hover:-translate-y-1"
           >
-            <div class="w-16 h-16 mx-auto mb-4 text-tertiary-400">
+            <div
+              class="w-16 h-16 mx-auto mb-6 text-tertiary-400 transform transition-transform duration-300 hover:scale-110"
+            >
               <svg
                 class="w-full h-full"
                 aria-hidden="true"
@@ -807,19 +1007,19 @@
               </svg>
             </div>
 
-            <h3 class="text-xl font-bold text-text text-center">
+            <h3 class="text-xl font-bold text-text text-center mb-3">
               Actas Oficiales
             </h3>
-            <p class="text-textMore text-sm mt-2 text-center">
+            <p class="text-textMore text-sm mt-2 text-center mb-6">
               Consulta y descarga las actas oficiales generadas por el comité.
             </p>
             <a
               href="/actas"
-              class="text-primary-700 font-semibold mt-4 inline-block group text-center"
+              class="text-primary-700 font-semibold mt-4 inline-flex items-center justify-center w-full group hover:text-primary-600 transition-colors duration-300"
             >
               Ver actas
               <span
-                class="inline-block transition-transform group-hover:translate-x-1"
+                class="inline-block transition-transform group-hover:translate-x-1 ml-2"
                 >→</span
               >
             </a>
@@ -827,9 +1027,11 @@
 
           <!-- Consulta de saldo / extractos -->
           <div
-            class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:bg-tertiary-50 border border-tertiary-400 p-6 transition"
+            class="bg-white rounded-2xl shadow-md hover:shadow-xl border-2 border-tertiary-400/20 hover:border-tertiary-400 p-6 transition-all duration-300 hover:-translate-y-1"
           >
-            <div class="w-16 h-16 mx-auto mb-4 text-tertiary-400">
+            <div
+              class="w-16 h-16 mx-auto mb-6 text-tertiary-400 transform transition-transform duration-300 hover:scale-110"
+            >
               <svg
                 class="w-full h-full"
                 aria-hidden="true"
@@ -850,20 +1052,20 @@
               </svg>
             </div>
 
-            <h3 class="text-xl font-bold text-text text-center">
+            <h3 class="text-xl font-bold text-text text-center mb-3">
               Consulta de saldo / extractos
             </h3>
-            <p class="text-textMore text-sm mt-2 text-center">
+            <p class="text-textMore text-sm mt-2 text-center mb-6">
               Muestra los saldos de ahorro, aportes y estado de cuenta del
               usuario.
             </p>
             <a
               href="/extractos"
-              class="text-primary-700 font-semibold mt-4 inline-block group text-center"
+              class="text-primary-700 font-semibold mt-4 inline-flex items-center justify-center w-full group hover:text-primary-600 transition-colors duration-300"
             >
               Ver extractos
               <span
-                class="inline-block transition-transform group-hover:translate-x-1"
+                class="inline-block transition-transform group-hover:translate-x-1 ml-2"
                 >→</span
               >
             </a>
@@ -871,9 +1073,11 @@
 
           <!-- Preguntas Frecuentes -->
           <div
-            class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:bg-tertiary-50 border border-tertiary-400 p-6 transition"
+            class="bg-white rounded-2xl shadow-md hover:shadow-xl border-2 border-tertiary-400/20 hover:border-tertiary-400 p-6 transition-all duration-300 hover:-translate-y-1"
           >
-            <div class="w-16 h-16 mx-auto mb-4 text-tertiary-400">
+            <div
+              class="w-16 h-16 mx-auto mb-6 text-tertiary-400 transform transition-transform duration-300 hover:scale-110"
+            >
               <svg
                 class="w-full h-full"
                 xmlns="http://www.w3.org/2000/svg"
@@ -886,24 +1090,204 @@
               </svg>
             </div>
 
-            <h3 class="text-xl font-bold text-text text-center">
+            <h3 class="text-xl font-bold text-text text-center mb-3">
               Preguntas Frecuentes (FAQ)
             </h3>
-            <p class="text-textMore text-sm mt-2 text-center">
+            <p class="text-textMore text-sm mt-2 text-center mb-6">
               Respuestas automáticas a preguntas comunes sobre afiliación,
               crédito, aportes, etc.
             </p>
             <a
               href="/faq"
-              class="text-primary-700 font-semibold mt-4 inline-block group text-center"
+              class="text-primary-700 font-semibold mt-4 inline-flex items-center justify-center w-full group hover:text-primary-600 transition-colors duration-300"
             >
               Ver preguntas
               <span
-                class="inline-block transition-transform group-hover:translate-x-1"
+                class="inline-block transition-transform group-hover:translate-x-1 ml-2"
                 >→</span
               >
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="py-12 bg-gradient-to-br from-primary-50 to-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-text mb-4 font-heading">
+            Artículos de Interés
+          </h2>
+          <p class="text-textMore max-w-2xl mx-auto">
+            Mantente informado con las últimas noticias y actualizaciones de
+            Foninco
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Article 1 -->
+          <article
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="./src/assets/Contenido/article1.jpg"
+                alt="Nuevos beneficios para asociados"
+                class="w-full h-48 object-cover"
+              />
+              <div class="absolute top-4 left-4">
+                <span
+                  class="bg-tertiary-400 text-white text-xs font-semibold px-3 py-1 rounded-full"
+                >
+                  Beneficios
+                </span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-bold text-text mb-2 line-clamp-2 hover:text-primary-600 transition-colors"
+                >
+                  <a href="#"
+                    >Nuevos beneficios para nuestros asociados en 2024</a
+                  >
+                </h3>
+                <p class="text-textMore text-sm line-clamp-3">
+                  Descubre los nuevos convenios y beneficios que hemos preparado
+                  para ti. Más descuentos, más oportunidades y mejores servicios
+                  para todos nuestros asociados.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <img
+                    src="./src/assets/logoFoninco.png"
+                    alt="Author"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <span class="text-sm text-textMore">Equipo Foninco</span>
+                </div>
+                <span class="text-sm text-textMore">Marzo 15, 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="./src/assets/Contenido/article2.jpg"
+                alt="Tasas de interés especiales"
+                class="w-full h-48 object-cover"
+              />
+              <div class="absolute top-4 left-4">
+                <span
+                  class="bg-primary-600 text-white text-xs font-semibold px-3 py-1 rounded-full"
+                >
+                  Créditos
+                </span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-bold text-text mb-2 line-clamp-2 hover:text-primary-600 transition-colors"
+                >
+                  <a href="#"
+                    >Tasas de interés especiales para créditos de vivienda</a
+                  >
+                </h3>
+                <p class="text-textMore text-sm line-clamp-3">
+                  Aprovecha nuestras nuevas tasas de interés para créditos de
+                  vivienda. Hacemos realidad el sueño de tener casa propia con
+                  las mejores condiciones del mercado.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <img
+                    src="./src/assets/logoFoninco.png"
+                    alt="Author"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <span class="text-sm text-textMore">Comité de Crédito</span>
+                </div>
+                <span class="text-sm text-textMore">Marzo 10, 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="relative">
+              <img
+                src="./src/assets/Contenido/article3.jpg"
+                alt="Asamblea general"
+                class="w-full h-48 object-cover"
+              />
+              <div class="absolute top-4 left-4">
+                <span
+                  class="bg-secondary-600 text-white text-xs font-semibold px-3 py-1 rounded-full"
+                >
+                  Eventos
+                </span>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="mb-4">
+                <h3
+                  class="text-xl font-bold text-text mb-2 line-clamp-2 hover:text-primary-600 transition-colors"
+                >
+                  <a href="#">Próxima Asamblea General de Asociados 2024</a>
+                </h3>
+                <p class="text-textMore text-sm line-clamp-3">
+                  Te invitamos a participar en nuestra Asamblea General
+                  Ordinaria donde presentaremos los resultados del 2023 y los
+                  proyectos para este año.
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <img
+                    src="./src/assets/logoFoninco.png"
+                    alt="Author"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <span class="text-sm text-textMore">Junta Directiva</span>
+                </div>
+                <span class="text-sm text-textMore">Marzo 5, 2024</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-10">
+          <a
+            href="/blog"
+            class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 transition-colors duration-300"
+          >
+            Ver todos los artículos
+            <svg
+              class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -1024,22 +1408,7 @@
               >
                 <path
                   fill-rule="evenodd"
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-            <a href="#" class="text-primary-700 hover:text-white">
-              <svg
-                class="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                  clip-rule="evenodd"
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.484 10-10S17.523 2 12 2zm.25 15h-1.5v-1.5h1.5V17zm1.45-5.9l-.9.92c-.63.63-.8 1.1-.8 1.98h-1.5c0-1.2.2-1.97 1.1-2.87l1.1-1.13a1.5 1.5 0 1 0-2.1-2.14l-.3.3-1.05-1.05.3-.3a3 3 0 1 1 4.25 4.29z"
                 />
               </svg>
             </a>

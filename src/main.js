@@ -10,22 +10,58 @@ import { Autoplay } from "swiper/modules";
 
 AOS.init();
 
+// Menú móvil
+const menuBtn = document.getElementById("menu-btn");
+const closeMenuBtn = document.getElementById("close-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+});
+
+closeMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("hidden");
+  document.body.style.overflow = "auto";
+});
+
+// Función para alternar submenús
+window.toggleSubmenu = function (submenuId) {
+  const submenu = document.getElementById(submenuId);
+  const allSubmenus = document.querySelectorAll('[id$="-submenu"]');
+
+  // Cerrar otros submenús
+  allSubmenus.forEach((menu) => {
+    if (menu.id !== submenuId && !menu.classList.contains("hidden")) {
+      menu.classList.add("hidden");
+    }
+  });
+
+  // Alternar el submenú actual
+  submenu.classList.toggle("hidden");
+};
+
+// Cerrar el menú móvil al hacer clic en un enlace
+const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+    document.body.style.overflow = "auto";
+  });
+});
+
+// Swiper configuration
 const images = [
-  "images/alkomprar.png",
-  "images/alkosto.jpg",
-  "images/americanVisas.jpg",
-  "images/colanta.jpg",
-  "images/HDI.jpg",
-  "images/logo-foninco-transparente.png",
-  "images/logoFoninco.jpg",
-  "images/optisocial.jpg",
-  "images/paypallogo.png",
-  "images/redvital.jpg",
-  "images/redvitalMascotas.jpg",
-  "images/royalFilmsLogo.jpg",
-  "images/slack.png",
-  "images/spotify.png",
-  "images/zenu.jpg",
+  "./src/assets/Convenios/alkomprar.png",
+  "./src/assets/Convenios/alkosto.jpg",
+  "./src/assets/Convenios/americanVisas.jpg",
+  "./src/assets/Convenios/colanta.jpg",
+  "./src/assets/Convenios/HDI.jpg",
+  "./src/assets/Convenios/optisocial.jpg",
+  "./src/assets/Convenios/redvital.jpg",
+  "./src/assets/Convenios/redvitalMascotas.jpg",
+  "./src/assets/Convenios/royalFilmsLogo.jpg",
+  "./src/assets/Convenios/zenu.jpg",
 ];
 
 const swiper = new Swiper(".mySwiper", {
